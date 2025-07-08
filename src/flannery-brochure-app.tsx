@@ -1048,33 +1048,31 @@ const FlanneryBrochure = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Test Project Banner - fixed at the very top */}
-      <div className="fixed top-0 left-0 w-full bg-red-700 text-white text-center py-2 font-bold tracking-wide text-sm z-[9999] shadow-lg">
+      <Navigation />
+      {/* Test Project Banner - now below the navigation */}
+      <div className="w-full bg-red-700 text-white text-center py-2 font-bold tracking-wide text-sm z-[9999] shadow-lg">
         TEST PROJECT - NOT FOR PUBLICATION
       </div>
-      <div className="pt-8"> {/* Push content down to avoid overlap */}
-        <Navigation />
-        {/* Debug indicator to show current section */}
-        <div className="fixed top-20 right-4 z-40 bg-black text-white px-3 py-1 rounded text-xs">
-          Current: {activeSection}
-        </div>
-        {renderSection()}
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">FLANNERY PLANT HIRE</h3>
-              <p className="text-gray-300 mb-6">
-                People | Safety | Innovation | Sustainability | Value
-              </p>
-              <div className="flex justify-center space-x-8 text-sm text-gray-400">
-                <span>© 2023 Flannery Plant Hire</span>
-                <span>flanneryplanthire.com</span>
-              </div>
+      {/* Debug indicator to show current section */}
+      <div className="fixed top-20 right-4 z-40 bg-black text-white px-3 py-1 rounded text-xs">
+        Current: {activeSection}
+      </div>
+      {renderSection()}
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-4">FLANNERY PLANT HIRE</h3>
+            <p className="text-gray-300 mb-6">
+              People | Safety | Innovation | Sustainability | Value
+            </p>
+            <div className="flex justify-center space-x-8 text-sm text-gray-400">
+              <span>© 2023 Flannery Plant Hire</span>
+              <span>flanneryplanthire.com</span>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   );
 };
