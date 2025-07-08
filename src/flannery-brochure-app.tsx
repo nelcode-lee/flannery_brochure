@@ -1048,6 +1048,10 @@ const FlanneryBrochure = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Test Project Banner */}
+      <div className="w-full bg-red-700 text-white text-center py-2 font-bold tracking-wide text-sm z-50">
+        TEST PROJECT - NOT FOR PUBLICATION
+      </div>
       <Navigation />
       
       {/* Debug indicator to show current section */}
